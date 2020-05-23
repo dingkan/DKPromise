@@ -26,6 +26,15 @@
 		D61B28141ECC2D170023DA66 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D61B280C1ECC2D170023DA66 /* AFURLRequestSerialization.m */; };
 		D61B28151ECC2D170023DA66 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D61B280E1ECC2D170023DA66 /* AFURLResponseSerialization.m */; };
 		D61B28161ECC2D170023DA66 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D61B28101ECC2D170023DA66 /* AFURLSessionManager.m */; };
+		D654807824779D2A0092B472 /* DKPromiseError.m in Sources */ = {isa = PBXBuildFile; fileRef = D654807724779D2A0092B472 /* DKPromiseError.m */; };
+		D654807B2477A00E0092B472 /* DKPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = D654807A2477A00E0092B472 /* DKPromise.m */; };
+		D654807E2477B5B30092B472 /* DKPromise+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = D654807D2477B5B30092B472 /* DKPromise+Testing.m */; };
+		D6590C5A2478C2D8001FA7E9 /* DKPromise+Then.m in Sources */ = {isa = PBXBuildFile; fileRef = D6590C592478C2D8001FA7E9 /* DKPromise+Then.m */; };
+		D6590C5D2478C82D001FA7E9 /* DKPromise+Catch.m in Sources */ = {isa = PBXBuildFile; fileRef = D6590C5C2478C82D001FA7E9 /* DKPromise+Catch.m */; };
+		D6590C602478CBE5001FA7E9 /* DKPromise+Timeout.m in Sources */ = {isa = PBXBuildFile; fileRef = D6590C5F2478CBE5001FA7E9 /* DKPromise+Timeout.m */; };
+		D6590C632478E861001FA7E9 /* DKPromise+Do.m in Sources */ = {isa = PBXBuildFile; fileRef = D6590C622478E861001FA7E9 /* DKPromise+Do.m */; };
+		D6590C662478ECA1001FA7E9 /* DKPromise+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = D6590C652478ECA1001FA7E9 /* DKPromise+Async.m */; };
+		D6590C692478F00E001FA7E9 /* DKPromise+All.m in Sources */ = {isa = PBXBuildFile; fileRef = D6590C682478F00E001FA7E9 /* DKPromise+All.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +90,25 @@
 		D61B280E1ECC2D170023DA66 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		D61B280F1ECC2D170023DA66 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		D61B28101ECC2D170023DA66 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		D654807624779D2A0092B472 /* DKPromiseError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKPromiseError.h; sourceTree = "<group>"; };
+		D654807724779D2A0092B472 /* DKPromiseError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKPromiseError.m; sourceTree = "<group>"; };
+		D65480792477A00E0092B472 /* DKPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKPromise.h; sourceTree = "<group>"; };
+		D654807A2477A00E0092B472 /* DKPromise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKPromise.m; sourceTree = "<group>"; };
+		D654807C2477B5B30092B472 /* DKPromise+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Testing.h"; sourceTree = "<group>"; };
+		D654807D2477B5B30092B472 /* DKPromise+Testing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Testing.m"; sourceTree = "<group>"; };
+		D6590C572478B7B6001FA7E9 /* DKPromisePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKPromisePrivate.h; sourceTree = "<group>"; };
+		D6590C582478C2D8001FA7E9 /* DKPromise+Then.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Then.h"; sourceTree = "<group>"; };
+		D6590C592478C2D8001FA7E9 /* DKPromise+Then.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Then.m"; sourceTree = "<group>"; };
+		D6590C5B2478C82D001FA7E9 /* DKPromise+Catch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Catch.h"; sourceTree = "<group>"; };
+		D6590C5C2478C82D001FA7E9 /* DKPromise+Catch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Catch.m"; sourceTree = "<group>"; };
+		D6590C5E2478CBE5001FA7E9 /* DKPromise+Timeout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Timeout.h"; sourceTree = "<group>"; };
+		D6590C5F2478CBE5001FA7E9 /* DKPromise+Timeout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Timeout.m"; sourceTree = "<group>"; };
+		D6590C612478E861001FA7E9 /* DKPromise+Do.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Do.h"; sourceTree = "<group>"; };
+		D6590C622478E861001FA7E9 /* DKPromise+Do.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Do.m"; sourceTree = "<group>"; };
+		D6590C642478ECA1001FA7E9 /* DKPromise+Async.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Async.h"; sourceTree = "<group>"; };
+		D6590C652478ECA1001FA7E9 /* DKPromise+Async.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Async.m"; sourceTree = "<group>"; };
+		D6590C672478F00E001FA7E9 /* DKPromise+All.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+All.h"; sourceTree = "<group>"; };
+		D6590C682478F00E001FA7E9 /* DKPromise+All.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+All.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +159,7 @@
 		D61B27BF1ECBECBF0023DA66 /* DKPromise */ = {
 			isa = PBXGroup;
 			children = (
+				D654807524776E630092B472 /* DKPromise */,
 				D61B28031ECC2D170023DA66 /* AFNetworking */,
 				D61B27F31ECBECDE0023DA66 /* Promise */,
 				D61B27C31ECBECBF0023DA66 /* AppDelegate.h */,
@@ -205,6 +234,32 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		D654807524776E630092B472 /* DKPromise */ = {
+			isa = PBXGroup;
+			children = (
+				D654807624779D2A0092B472 /* DKPromiseError.h */,
+				D654807724779D2A0092B472 /* DKPromiseError.m */,
+				D65480792477A00E0092B472 /* DKPromise.h */,
+				D654807A2477A00E0092B472 /* DKPromise.m */,
+				D6590C572478B7B6001FA7E9 /* DKPromisePrivate.h */,
+				D654807C2477B5B30092B472 /* DKPromise+Testing.h */,
+				D654807D2477B5B30092B472 /* DKPromise+Testing.m */,
+				D6590C582478C2D8001FA7E9 /* DKPromise+Then.h */,
+				D6590C592478C2D8001FA7E9 /* DKPromise+Then.m */,
+				D6590C5B2478C82D001FA7E9 /* DKPromise+Catch.h */,
+				D6590C5C2478C82D001FA7E9 /* DKPromise+Catch.m */,
+				D6590C5E2478CBE5001FA7E9 /* DKPromise+Timeout.h */,
+				D6590C5F2478CBE5001FA7E9 /* DKPromise+Timeout.m */,
+				D6590C612478E861001FA7E9 /* DKPromise+Do.h */,
+				D6590C622478E861001FA7E9 /* DKPromise+Do.m */,
+				D6590C642478ECA1001FA7E9 /* DKPromise+Async.h */,
+				D6590C652478ECA1001FA7E9 /* DKPromise+Async.m */,
+				D6590C672478F00E001FA7E9 /* DKPromise+All.h */,
+				D6590C682478F00E001FA7E9 /* DKPromise+All.m */,
+			);
+			path = DKPromise;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,6 +327,7 @@
 				TargetAttributes = {
 					D61B27BC1ECBECBF0023DA66 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = MTGQCB5B3L;
 						ProvisioningStyle = Automatic;
 					};
 					D61B27D51ECBECBF0023DA66 = {
@@ -291,6 +347,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -339,17 +396,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				D61B27C81ECBECBF0023DA66 /* ViewController.m in Sources */,
+				D6590C662478ECA1001FA7E9 /* DKPromise+Async.m in Sources */,
 				D61B27FF1ECC26210023DA66 /* Promise+Catch.m in Sources */,
+				D6590C692478F00E001FA7E9 /* DKPromise+All.m in Sources */,
+				D6590C5D2478C82D001FA7E9 /* DKPromise+Catch.m in Sources */,
 				D61B28121ECC2D170023DA66 /* AFNetworkReachabilityManager.m in Sources */,
 				D61B28161ECC2D170023DA66 /* AFURLSessionManager.m in Sources */,
+				D654807B2477A00E0092B472 /* DKPromise.m in Sources */,
+				D654807E2477B5B30092B472 /* DKPromise+Testing.m in Sources */,
 				D61B28141ECC2D170023DA66 /* AFURLRequestSerialization.m in Sources */,
 				D61B27C51ECBECBF0023DA66 /* AppDelegate.m in Sources */,
 				D61B28151ECC2D170023DA66 /* AFURLResponseSerialization.m in Sources */,
+				D6590C602478CBE5001FA7E9 /* DKPromise+Timeout.m in Sources */,
+				D6590C5A2478C2D8001FA7E9 /* DKPromise+Then.m in Sources */,
 				D61B28111ECC2D170023DA66 /* AFHTTPSessionManager.m in Sources */,
 				D61B27FC1ECC23C90023DA66 /* Promise+Then.m in Sources */,
 				D61B27F91ECC16BC0023DA66 /* Promise+Error.m in Sources */,
 				D61B28021ECC28290023DA66 /* Promise+Finally.m in Sources */,
 				D61B27C21ECBECBF0023DA66 /* main.m in Sources */,
+				D654807824779D2A0092B472 /* DKPromiseError.m in Sources */,
+				D6590C632478E861001FA7E9 /* DKPromise+Do.m in Sources */,
 				D61B28131ECC2D170023DA66 /* AFSecurityPolicy.m in Sources */,
 				D61B27F61ECC10E90023DA66 /* Promise.m in Sources */,
 			);
@@ -502,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MTGQCB5B3L;
 				INFOPLIST_FILE = DKPromise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingkan.DKPromise;
@@ -513,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MTGQCB5B3L;
 				INFOPLIST_FILE = DKPromise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingkan.DKPromise;
@@ -585,6 +653,7 @@
 				D61B27EC1ECBECBF0023DA66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D61B27ED1ECBECBF0023DA66 /* Build configuration list for PBXNativeTarget "DKPromiseTests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +662,7 @@
 				D61B27EF1ECBECBF0023DA66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D61B27F01ECBECBF0023DA66 /* Build configuration list for PBXNativeTarget "DKPromiseUITests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +671,7 @@
 				D61B27F21ECBECBF0023DA66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
