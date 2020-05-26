@@ -72,3 +72,19 @@
 }
 
 @end
+
+@implementation DKPromise(DotSyntax_AllAdditions)
+
++(DKPromise <NSArray *>*(^)(NSArray *))all{
+    return ^(NSArray <DKPromise *>*promises){
+        return [self all:promises];
+    };
+}
+
++(DKPromise <NSArray *>*(^)(dispatch_queue_t, NSArray *))allOn{
+    return ^(dispatch_queue_t queue, NSArray *promises){
+        return [self onQueue:queue all:promises];
+    };
+}
+
+@end

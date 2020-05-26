@@ -26,6 +26,13 @@
 		D61B28141ECC2D170023DA66 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D61B280C1ECC2D170023DA66 /* AFURLRequestSerialization.m */; };
 		D61B28151ECC2D170023DA66 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D61B280E1ECC2D170023DA66 /* AFURLResponseSerialization.m */; };
 		D61B28161ECC2D170023DA66 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D61B28101ECC2D170023DA66 /* AFURLSessionManager.m */; };
+		D646FFCB247D2F230072A12B /* DKPromise+Any.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFCA247D2F230072A12B /* DKPromise+Any.m */; };
+		D646FFCE247D33E70072A12B /* DKPromise+always.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFCD247D33E70072A12B /* DKPromise+always.m */; };
+		D646FFD1247D376E0072A12B /* DKPromise+Await.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFD0247D376E0072A12B /* DKPromise+Await.m */; };
+		D646FFD4247D399A0072A12B /* DKPromise+Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFD3247D399A0072A12B /* DKPromise+Delay.m */; };
+		D646FFD7247D3BB00072A12B /* DKPromise+Race.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFD6247D3BB00072A12B /* DKPromise+Race.m */; };
+		D646FFDA247D3F450072A12B /* DKPromise+Recover.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFD9247D3F450072A12B /* DKPromise+Recover.m */; };
+		D646FFDD247D420D0072A12B /* DKPromise+Retry.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFDC247D420D0072A12B /* DKPromise+Retry.m */; };
 		D654807824779D2A0092B472 /* DKPromiseError.m in Sources */ = {isa = PBXBuildFile; fileRef = D654807724779D2A0092B472 /* DKPromiseError.m */; };
 		D654807B2477A00E0092B472 /* DKPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = D654807A2477A00E0092B472 /* DKPromise.m */; };
 		D654807E2477B5B30092B472 /* DKPromise+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = D654807D2477B5B30092B472 /* DKPromise+Testing.m */; };
@@ -90,6 +97,20 @@
 		D61B280E1ECC2D170023DA66 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		D61B280F1ECC2D170023DA66 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		D61B28101ECC2D170023DA66 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		D646FFC9247D2F230072A12B /* DKPromise+Any.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Any.h"; sourceTree = "<group>"; };
+		D646FFCA247D2F230072A12B /* DKPromise+Any.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Any.m"; sourceTree = "<group>"; };
+		D646FFCC247D33E70072A12B /* DKPromise+always.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+always.h"; sourceTree = "<group>"; };
+		D646FFCD247D33E70072A12B /* DKPromise+always.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+always.m"; sourceTree = "<group>"; };
+		D646FFCF247D376E0072A12B /* DKPromise+Await.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Await.h"; sourceTree = "<group>"; };
+		D646FFD0247D376E0072A12B /* DKPromise+Await.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Await.m"; sourceTree = "<group>"; };
+		D646FFD2247D399A0072A12B /* DKPromise+Delay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Delay.h"; sourceTree = "<group>"; };
+		D646FFD3247D399A0072A12B /* DKPromise+Delay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Delay.m"; sourceTree = "<group>"; };
+		D646FFD5247D3BB00072A12B /* DKPromise+Race.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Race.h"; sourceTree = "<group>"; };
+		D646FFD6247D3BB00072A12B /* DKPromise+Race.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Race.m"; sourceTree = "<group>"; };
+		D646FFD8247D3F450072A12B /* DKPromise+Recover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Recover.h"; sourceTree = "<group>"; };
+		D646FFD9247D3F450072A12B /* DKPromise+Recover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Recover.m"; sourceTree = "<group>"; };
+		D646FFDB247D420D0072A12B /* DKPromise+Retry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Retry.h"; sourceTree = "<group>"; };
+		D646FFDC247D420D0072A12B /* DKPromise+Retry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Retry.m"; sourceTree = "<group>"; };
 		D654807624779D2A0092B472 /* DKPromiseError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKPromiseError.h; sourceTree = "<group>"; };
 		D654807724779D2A0092B472 /* DKPromiseError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKPromiseError.m; sourceTree = "<group>"; };
 		D65480792477A00E0092B472 /* DKPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKPromise.h; sourceTree = "<group>"; };
@@ -256,6 +277,20 @@
 				D6590C652478ECA1001FA7E9 /* DKPromise+Async.m */,
 				D6590C672478F00E001FA7E9 /* DKPromise+All.h */,
 				D6590C682478F00E001FA7E9 /* DKPromise+All.m */,
+				D646FFC9247D2F230072A12B /* DKPromise+Any.h */,
+				D646FFCA247D2F230072A12B /* DKPromise+Any.m */,
+				D646FFCC247D33E70072A12B /* DKPromise+always.h */,
+				D646FFCD247D33E70072A12B /* DKPromise+always.m */,
+				D646FFCF247D376E0072A12B /* DKPromise+Await.h */,
+				D646FFD0247D376E0072A12B /* DKPromise+Await.m */,
+				D646FFD2247D399A0072A12B /* DKPromise+Delay.h */,
+				D646FFD3247D399A0072A12B /* DKPromise+Delay.m */,
+				D646FFD5247D3BB00072A12B /* DKPromise+Race.h */,
+				D646FFD6247D3BB00072A12B /* DKPromise+Race.m */,
+				D646FFD8247D3F450072A12B /* DKPromise+Recover.h */,
+				D646FFD9247D3F450072A12B /* DKPromise+Recover.m */,
+				D646FFDB247D420D0072A12B /* DKPromise+Retry.h */,
+				D646FFDC247D420D0072A12B /* DKPromise+Retry.m */,
 			);
 			path = DKPromise;
 			sourceTree = "<group>";
@@ -398,6 +433,8 @@
 				D61B27C81ECBECBF0023DA66 /* ViewController.m in Sources */,
 				D6590C662478ECA1001FA7E9 /* DKPromise+Async.m in Sources */,
 				D61B27FF1ECC26210023DA66 /* Promise+Catch.m in Sources */,
+				D646FFD7247D3BB00072A12B /* DKPromise+Race.m in Sources */,
+				D646FFCB247D2F230072A12B /* DKPromise+Any.m in Sources */,
 				D6590C692478F00E001FA7E9 /* DKPromise+All.m in Sources */,
 				D6590C5D2478C82D001FA7E9 /* DKPromise+Catch.m in Sources */,
 				D61B28121ECC2D170023DA66 /* AFNetworkReachabilityManager.m in Sources */,
@@ -406,11 +443,16 @@
 				D654807E2477B5B30092B472 /* DKPromise+Testing.m in Sources */,
 				D61B28141ECC2D170023DA66 /* AFURLRequestSerialization.m in Sources */,
 				D61B27C51ECBECBF0023DA66 /* AppDelegate.m in Sources */,
+				D646FFDD247D420D0072A12B /* DKPromise+Retry.m in Sources */,
 				D61B28151ECC2D170023DA66 /* AFURLResponseSerialization.m in Sources */,
 				D6590C602478CBE5001FA7E9 /* DKPromise+Timeout.m in Sources */,
 				D6590C5A2478C2D8001FA7E9 /* DKPromise+Then.m in Sources */,
+				D646FFCE247D33E70072A12B /* DKPromise+always.m in Sources */,
 				D61B28111ECC2D170023DA66 /* AFHTTPSessionManager.m in Sources */,
+				D646FFDA247D3F450072A12B /* DKPromise+Recover.m in Sources */,
+				D646FFD1247D376E0072A12B /* DKPromise+Await.m in Sources */,
 				D61B27FC1ECC23C90023DA66 /* Promise+Then.m in Sources */,
+				D646FFD4247D399A0072A12B /* DKPromise+Delay.m in Sources */,
 				D61B27F91ECC16BC0023DA66 /* Promise+Error.m in Sources */,
 				D61B28021ECC28290023DA66 /* Promise+Finally.m in Sources */,
 				D61B27C21ECBECBF0023DA66 /* main.m in Sources */,

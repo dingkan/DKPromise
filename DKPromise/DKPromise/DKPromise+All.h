@@ -19,4 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+@interface DKPromise<Value> (DotSyntax_AllAdditions)
+
+
++(DKPromise <NSArray *>*(^)(NSArray *))all;
+
++(DKPromise <NSArray *>*(^)(dispatch_queue_t, NSArray *))allOn;
+@end
+
 NS_ASSUME_NONNULL_END
