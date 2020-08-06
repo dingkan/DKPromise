@@ -39,6 +39,7 @@
                 continue;
             }else if ([value isKindOfClass:[NSError class]]){
                 reject(value);
+                return;
             }else{
                 [allPromise replaceObjectAtIndex:i withObject:[[DKPromise alloc] initWithResolution:value]];
             }
@@ -56,7 +57,7 @@
                 }
                 
                 //如果多次调用，只有第一次调用会影响结果
-                fulfill([promises valueForKey:NSStringFromSelector(@selector(value))]);
+                fulfill([allPromise valueForKey:NSStringFromSelector(@selector(value))]);
                 
             } reject:^(NSError * _Nonnull error) {
                 

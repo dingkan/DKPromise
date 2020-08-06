@@ -66,18 +66,20 @@ static dispatch_queue_t gDKPromiseDefaultDispatchQueue;
         [self reject:value];
     }else{
         @synchronized (self) {
-            _state = DKPromiseStateFulFill;
-            _value = value;
-            
-            _pendingObjects = nil;
-            
-            for (DKPromiseObserver observer in _observers) {
-                !observer?:observer(_state, _value);
+            if (_state == DKPromiseStatePending) {
+                _state = DKPromiseStateFulFill;
+                _value = value;
+                
+                _pendingObjects = nil;
+                
+                for (DKPromiseObserver observer in _observers) {
+                    !observer?:observer(_state, _value);
+                }
+                
+                _observers = nil;
+                
+                dispatch_group_leave(DKPromise.dispatchGroup);
             }
-            
-            _observers = nil;
-            
-            dispatch_group_leave(DKPromise.dispatchGroup);
         }
     }
 }
@@ -91,14 +93,16 @@ static dispatch_queue_t gDKPromiseDefaultDispatchQueue;
     }
     
     @synchronized (self) {
-        _state = DKPromiseStateReject;
-        _error = error;
-        _pendingObjects = nil;
-        for (DKPromiseObserver observer in _observers) {
-            !observer?:observer(_state, _error);
+        if (_state == DKPromiseStatePending) {
+            _state = DKPromiseStateReject;
+            _error = error;
+            _pendingObjects = nil;
+            for (DKPromiseObserver observer in _observers) {
+                !observer?:observer(_state, _error);
+            }
+            _observers = nil;
+            dispatch_group_leave(DKPromise.dispatchGroup);
         }
-        _observers = nil;
-        dispatch_group_leave(DKPromise.dispatchGroup);
     }
 }
 
@@ -116,7 +120,7 @@ static dispatch_queue_t gDKPromiseDefaultDispatchQueue;
             _state = DKPromiseStateReject;
             _error = (NSError *)resolution;
         }else{
-            _state = DKPromiseStatePending;
+            _state = DKPromiseStateFulFill;
             _value = resolution;
         }
     }
@@ -174,7 +178,7 @@ static dispatch_queue_t gDKPromiseDefaultDispatchQueue;
             case DKPromiseStatePending:
             {
                 //监听队列
-                if (_observers) {
+                if (!_observers) {
                     _observers = [NSMutableArray array];
                 }
                 
@@ -185,10 +189,10 @@ static dispatch_queue_t gDKPromiseDefaultDispatchQueue;
                             case DKPromiseStatePending:
                                 break;
                             case DKPromiseStateFulFill:
-                                !onFulFill?:onFulFill(resolution);
+                                onFulFill(resolution);
                                 break;
                             case DKPromiseStateReject:
-                                !onReject?:onReject(resolution);
+                                onReject(resolution);
                                 break;
                             default:
                                 break;
@@ -202,7 +206,7 @@ static dispatch_queue_t gDKPromiseDefaultDispatchQueue;
             case DKPromiseStateFulFill:
             {
                 dispatch_group_async(DKPromise.dispatchGroup, queue, ^{
-                    !onFulFill?:onFulFill(self->_value);
+                    onFulFill(self->_value);
                 });
             }
                 break;
@@ -210,7 +214,7 @@ static dispatch_queue_t gDKPromiseDefaultDispatchQueue;
             case DKPromiseStateReject:
             {
                 dispatch_group_async(DKPromise.dispatchGroup, queue, ^{
-                    !onReject?:onReject(self->_error);
+                    onReject(self->_error);
                 });
             }
                 break;

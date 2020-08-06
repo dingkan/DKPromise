@@ -11,6 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+BOOL DKWaitForPromisesWithTimeout(NSTimeInterval timeout) NS_REFINED_FOR_SWIFT;
 @interface DKPromise<Value> (Testing)
 
 @property (nonatomic, class, readonly) dispatch_group_t dispatchGroup NS_REFINED_FOR_SWIFT;

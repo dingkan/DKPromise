@@ -26,7 +26,7 @@
     
     dispatch_group_async(DKPromise.dispatchGroup, queue, ^{
        
-        !work?:work(
+        work(
              ^(id __nullable value){
                     
                 //判断下一个传过来的值

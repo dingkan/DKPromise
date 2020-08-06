@@ -4,7 +4,7 @@
 //
 //  Created by 丁侃 on 2020/5/26.
 //  Copyright © 2020 丁侃. All rights reserved.
-//
+//  尝试多次执行N次， 如果N次后又一次成功就返回，知道都失败reject
 
 #import "DKPromise.h"
 

@@ -33,6 +33,12 @@
 		D646FFD7247D3BB00072A12B /* DKPromise+Race.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFD6247D3BB00072A12B /* DKPromise+Race.m */; };
 		D646FFDA247D3F450072A12B /* DKPromise+Recover.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFD9247D3F450072A12B /* DKPromise+Recover.m */; };
 		D646FFDD247D420D0072A12B /* DKPromise+Retry.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFDC247D420D0072A12B /* DKPromise+Retry.m */; };
+		D646FFE0247DF5300072A12B /* DKPromise+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFDF247DF5300072A12B /* DKPromise+Validate.m */; };
+		D646FFE3247DF7700072A12B /* DKPromise+Wrap.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFE2247DF7700072A12B /* DKPromise+Wrap.m */; };
+		D646FFEA247E2E650072A12B /* WDZPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFE9247E2E650072A12B /* WDZPromise.m */; };
+		D646FFF0247E2EE30072A12B /* WDZPromise+Error.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFEF247E2EE30072A12B /* WDZPromise+Error.m */; };
+		D646FFF6247E35DB0072A12B /* WDZPromise+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFF5247E35DB0072A12B /* WDZPromise+Testing.m */; };
+		D646FFF9247E42240072A12B /* WDZPromise+Then.m in Sources */ = {isa = PBXBuildFile; fileRef = D646FFF8247E42240072A12B /* WDZPromise+Then.m */; };
 		D654807824779D2A0092B472 /* DKPromiseError.m in Sources */ = {isa = PBXBuildFile; fileRef = D654807724779D2A0092B472 /* DKPromiseError.m */; };
 		D654807B2477A00E0092B472 /* DKPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = D654807A2477A00E0092B472 /* DKPromise.m */; };
 		D654807E2477B5B30092B472 /* DKPromise+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = D654807D2477B5B30092B472 /* DKPromise+Testing.m */; };
@@ -111,6 +117,21 @@
 		D646FFD9247D3F450072A12B /* DKPromise+Recover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Recover.m"; sourceTree = "<group>"; };
 		D646FFDB247D420D0072A12B /* DKPromise+Retry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Retry.h"; sourceTree = "<group>"; };
 		D646FFDC247D420D0072A12B /* DKPromise+Retry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Retry.m"; sourceTree = "<group>"; };
+		D646FFDE247DF5300072A12B /* DKPromise+Validate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Validate.h"; sourceTree = "<group>"; };
+		D646FFDF247DF5300072A12B /* DKPromise+Validate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Validate.m"; sourceTree = "<group>"; };
+		D646FFE1247DF7700072A12B /* DKPromise+Wrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPromise+Wrap.h"; sourceTree = "<group>"; };
+		D646FFE2247DF7700072A12B /* DKPromise+Wrap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DKPromise+Wrap.m"; sourceTree = "<group>"; };
+		D646FFE4247E03510072A12B /* DKPromises.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKPromises.h; sourceTree = "<group>"; };
+		D646FFE8247E2E650072A12B /* WDZPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDZPromise.h; sourceTree = "<group>"; };
+		D646FFE9247E2E650072A12B /* WDZPromise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDZPromise.m; sourceTree = "<group>"; };
+		D646FFEE247E2EE30072A12B /* WDZPromise+Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WDZPromise+Error.h"; sourceTree = "<group>"; };
+		D646FFEF247E2EE30072A12B /* WDZPromise+Error.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WDZPromise+Error.m"; sourceTree = "<group>"; };
+		D646FFF1247E2FDB0072A12B /* WDZPromise+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WDZPromise+Private.h"; sourceTree = "<group>"; };
+		D646FFF4247E35DB0072A12B /* WDZPromise+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WDZPromise+Testing.h"; sourceTree = "<group>"; };
+		D646FFF5247E35DB0072A12B /* WDZPromise+Testing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WDZPromise+Testing.m"; sourceTree = "<group>"; };
+		D646FFF7247E42240072A12B /* WDZPromise+Then.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WDZPromise+Then.h"; sourceTree = "<group>"; };
+		D646FFF8247E42240072A12B /* WDZPromise+Then.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WDZPromise+Then.m"; sourceTree = "<group>"; };
+		D646FFFA247E498F0072A12B /* DKPromiseHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKPromiseHelper.h; sourceTree = "<group>"; };
 		D654807624779D2A0092B472 /* DKPromiseError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKPromiseError.h; sourceTree = "<group>"; };
 		D654807724779D2A0092B472 /* DKPromiseError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKPromiseError.m; sourceTree = "<group>"; };
 		D65480792477A00E0092B472 /* DKPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKPromise.h; sourceTree = "<group>"; };
@@ -180,6 +201,7 @@
 		D61B27BF1ECBECBF0023DA66 /* DKPromise */ = {
 			isa = PBXGroup;
 			children = (
+				D646FFE7247E2E540072A12B /* WDZPromise */,
 				D654807524776E630092B472 /* DKPromise */,
 				D61B28031ECC2D170023DA66 /* AFNetworking */,
 				D61B27F31ECBECDE0023DA66 /* Promise */,
@@ -255,6 +277,22 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		D646FFE7247E2E540072A12B /* WDZPromise */ = {
+			isa = PBXGroup;
+			children = (
+				D646FFE8247E2E650072A12B /* WDZPromise.h */,
+				D646FFE9247E2E650072A12B /* WDZPromise.m */,
+				D646FFEE247E2EE30072A12B /* WDZPromise+Error.h */,
+				D646FFEF247E2EE30072A12B /* WDZPromise+Error.m */,
+				D646FFF1247E2FDB0072A12B /* WDZPromise+Private.h */,
+				D646FFF4247E35DB0072A12B /* WDZPromise+Testing.h */,
+				D646FFF5247E35DB0072A12B /* WDZPromise+Testing.m */,
+				D646FFF7247E42240072A12B /* WDZPromise+Then.h */,
+				D646FFF8247E42240072A12B /* WDZPromise+Then.m */,
+			);
+			path = WDZPromise;
+			sourceTree = "<group>";
+		};
 		D654807524776E630092B472 /* DKPromise */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +329,12 @@
 				D646FFD9247D3F450072A12B /* DKPromise+Recover.m */,
 				D646FFDB247D420D0072A12B /* DKPromise+Retry.h */,
 				D646FFDC247D420D0072A12B /* DKPromise+Retry.m */,
+				D646FFDE247DF5300072A12B /* DKPromise+Validate.h */,
+				D646FFDF247DF5300072A12B /* DKPromise+Validate.m */,
+				D646FFE1247DF7700072A12B /* DKPromise+Wrap.h */,
+				D646FFE2247DF7700072A12B /* DKPromise+Wrap.m */,
+				D646FFE4247E03510072A12B /* DKPromises.h */,
+				D646FFFA247E498F0072A12B /* DKPromiseHelper.h */,
 			);
 			path = DKPromise;
 			sourceTree = "<group>";
@@ -430,7 +474,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D646FFF0247E2EE30072A12B /* WDZPromise+Error.m in Sources */,
 				D61B27C81ECBECBF0023DA66 /* ViewController.m in Sources */,
+				D646FFF9247E42240072A12B /* WDZPromise+Then.m in Sources */,
 				D6590C662478ECA1001FA7E9 /* DKPromise+Async.m in Sources */,
 				D61B27FF1ECC26210023DA66 /* Promise+Catch.m in Sources */,
 				D646FFD7247D3BB00072A12B /* DKPromise+Race.m in Sources */,
@@ -446,6 +492,7 @@
 				D646FFDD247D420D0072A12B /* DKPromise+Retry.m in Sources */,
 				D61B28151ECC2D170023DA66 /* AFURLResponseSerialization.m in Sources */,
 				D6590C602478CBE5001FA7E9 /* DKPromise+Timeout.m in Sources */,
+				D646FFF6247E35DB0072A12B /* WDZPromise+Testing.m in Sources */,
 				D6590C5A2478C2D8001FA7E9 /* DKPromise+Then.m in Sources */,
 				D646FFCE247D33E70072A12B /* DKPromise+always.m in Sources */,
 				D61B28111ECC2D170023DA66 /* AFHTTPSessionManager.m in Sources */,
@@ -459,7 +506,10 @@
 				D654807824779D2A0092B472 /* DKPromiseError.m in Sources */,
 				D6590C632478E861001FA7E9 /* DKPromise+Do.m in Sources */,
 				D61B28131ECC2D170023DA66 /* AFSecurityPolicy.m in Sources */,
+				D646FFEA247E2E650072A12B /* WDZPromise.m in Sources */,
 				D61B27F61ECC10E90023DA66 /* Promise.m in Sources */,
+				D646FFE3247DF7700072A12B /* DKPromise+Wrap.m in Sources */,
+				D646FFE0247DF5300072A12B /* DKPromise+Validate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
